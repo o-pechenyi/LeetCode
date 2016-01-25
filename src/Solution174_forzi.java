@@ -4,7 +4,7 @@ In the end we have minimal lost HP in the dungeon[0][0] cell (negative value or 
 add 1 (because knight can't have zero HP)...
 */
 public class Solution174 {
-	public int calculateMinimumHP(int[][] dungeon) {
+  public int calculateMinimumHP(int[][] dungeon) {
     int lastI = dungeon.length - 1;
     int lastJ = dungeon[0].length - 1;
     int preLastI = lastI - 1;
@@ -24,5 +24,5 @@ public class Solution174 {
       }
     }
     return -dungeon[0][0] + 1;
-	}
+  }
 }
